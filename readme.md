@@ -63,14 +63,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
-<img src="images/breakdownPRG-01.png" width="375px" alt="front page van de zara website">
-<img src="images/breakdownPRG-02.png" width="375px" alt="front page van de zara website">
-<img src="images/breakdownPRG-03.png" width="375px" alt="front page van de zara website">
-<img src="images/breakdownPRG-05.png" width="375px" alt="front page van de zara website">
-<img src="images/breakdownPRG-06.png" width="375px" alt="front page van de zara website">
-<img src="images/breakdownPRG-07.png" width="375px" alt="front page van de zara website">
-<img src="images/breakdownPRG-08.png" width="375px" alt="front page van de zara website">
-<img src="images/breakdownPRG-09.png" width="375px" alt="front page van de zara website">
+<img src="images/breakdown PRG-01.png" width="375px" alt="front page van de zara website">
+<img src="images/breakdown PRG-02.png" width="375px" alt="front page van de zara website">
+<img src="images/breakdown PRG-03.png" width="375px" alt="front page van de zara website">
+<img src="images/breakdown PRG-05.png" width="375px" alt="front page van de zara website">
+<img src="images/breakdown PRG-06.png" width="375px" alt="front page van de zara website">
+<img src="images/breakdown PRG-07.png" width="375px" alt="front page van de zara website">
+<img src="images/breakdown PRG-08.png" width="375px" alt="front page van de zara website">
+<img src="images/breakdown PRG-09.png" width="375px" alt="front page van de zara website">
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
