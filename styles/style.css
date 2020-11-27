@@ -1,34 +1,133 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-main{
-  display: flex;
 
-}
-.product{
+main {
   display: flex;
-  flex-direction:column;
+  padding: 140px 45px 15px 45px;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
   align-items: center;
-
-
-
-}
-.productfoto{
-width: 10em;
-
+  justify-content: space-between;
 }
 
-main a{
+nav ul li a {
+  color: black;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+#Zara {
+  padding-left: 50px;
+}
+
+.menu {
+  display: block;
+  position: fixed;
+  width: 240px;
+  top: 0;
+  bottom: 0;
+  left: -240px;
+  background-color: #efefef;
+  transition-duration: .5s;
+}
+
+.menu--open {
+  left: 0;
+}
+
+.menu-wrapper {
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  display: inline-block;
+  border: none;
+  padding: 10px;
+  height: 74px;
+  width: 48px;
+  align-items: center;
+  top: 0;
+  right: -48px;
+  background-color: white;
+  outline: none;
+  background-image: url(/images/hamburgermenu.png);
+  background-repeat: no-repeat;
+  background-size: 2.5em;
+  margin-top: 10px;
+  background-position: right;
+  background-color: transparent;
+  ;
+}
+
+.hamburgerOpen {
+  position: absolute;
+  display: inline-block;
+  border: none;
+  padding: 10px;
+  height: 74px;
+  width: 48px;
+  align-items: center;
+  top: 0;
+  right: -48px;
+  background-color: white;
+  outline: none;
+  background-image: url(/images/close.png);
+  background-repeat: no-repeat;
+  background-size: 2.5em;
+  margin-top: 10px;
+  background-position: right;
+  background-color: transparent;
+  ;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.header-options>li {
+  display: inline-block;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productfoto {
+  width: 10em;
+}
+
+main a {
   align-content: space-between;
-    text-decoration: none;
-    color: black;
-    font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
   text-transform: uppercase;
   margin: 2em;
-
 }
-a h2{
-font-size: 15px;
 
+a h2 {
+  font-size: 15px;
 }
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (min-width: 1200px) {}
