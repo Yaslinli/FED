@@ -1,5 +1,34 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+  box-sizing:border-box;
+}
+main{
+  display: flex;
+
+}
+.product{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+
+
+
+}
+.productfoto{
+width: 10em;
+
 }
 
+main a{
+  align-content: space-between;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+  text-transform: uppercase;
+  margin: 2em;
+
+}
+a h2{
+font-size: 15px;
+
+}

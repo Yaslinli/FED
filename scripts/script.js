@@ -1,1 +1,2 @@
-// JavaScript Document
+document.getElementById('hamburger').addEventListener('click',)
+function
