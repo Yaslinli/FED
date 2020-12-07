@@ -1,5 +1,5 @@
 function toggleMenu() {
-  var nav = document.querySelector('nav.menu');
+  var nav = document.querySelector('nav');
   if (nav.classList.contains('menu--open')) {
     nav.classList.remove('menu--open');
   } else {
@@ -7,14 +7,14 @@ function toggleMenu() {
   }
 }
 
-document.querySelector('button.hamburger').addEventListener('click', toggleMenu);
+document.querySelector('nav button').addEventListener('click', toggleMenu);
 
 function hamburgerIcon() {
-  var hamburger = document.querySelector('button.hamburger');
+  var hamburger = document.querySelector('nav button');
   if (hamburger.classList.contains('hamburgerOpen')) {
     hamburger.classList.remove('hamburgerOpen');
   } else {
     hamburger.classList.add('hamburgerOpen');
   }
 }
-document.querySelector('button.hamburger').addEventListener('click', hamburgerIcon);
+document.querySelector('nav button').addEventListener('click', hamburgerIcon);

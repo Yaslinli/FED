@@ -5,57 +5,63 @@
   padding: 0;
 }
 
-main {
-  display: flex;
-  padding: 140px 45px 15px 45px;
-}
-
 header {
   display: flex;
   position: fixed;
+  background-color: white;
   width: 100%;
   padding: 10px;
+  padding-top: 20px;
   align-items: center;
   justify-content: space-between;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+nav {
+  display: block;
+  position: fixed;
+  padding-top: 5em;
+  width: 260px;
+  top: 0;
+  bottom: 0;
+  left: -260px;
+  background-color: white;
+  transition-duration: .5s;
 }
 
 nav ul li a {
+  display: flex;
+  align-self: center;
   color: black;
-  font-size: 1.5em;
+  font-size: 30px;
   font-family: sans-serif;
+  font-weight: bolder;
   text-transform: uppercase;
   text-decoration: none;
-  margin-left: 1em;
+  padding: 5px;
+  padding-left: 20px;
 }
 
-h1 {
-  font-size: 64px;
-}
-
-#Zara {
+header a {
   padding-left: 50px;
+  align-self: center;
 }
 
-.menu {
-  display: block;
-  position: fixed;
-  width: 240px;
-  top: 0;
-  bottom: 0;
-  left: -240px;
-  background-color: #efefef;
-  transition-duration: .5s;
+header a img {
+  width: 6em;
 }
 
 .menu--open {
   left: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
 }
 
-.menu-wrapper {
+nav ul button {
   position: relative;
 }
 
-.hamburger {
+nav button {
   position: absolute;
   display: inline-block;
   border: none;
@@ -67,7 +73,7 @@ h1 {
   right: -48px;
   background-color: white;
   outline: none;
-  background-image: url(/images/hamburgermenu.png);
+  background-image: url(../images/hamburgermenu.png);
   background-repeat: no-repeat;
   background-size: 2.5em;
   margin-top: 10px;
@@ -86,9 +92,8 @@ h1 {
   align-items: center;
   top: 0;
   right: -48px;
-  background-color: white;
   outline: none;
-  background-image: url(/images/close.png);
+  background-image: url(../images/close.png);
   background-repeat: no-repeat;
   background-size: 2.5em;
   margin-top: 10px;
@@ -97,7 +102,7 @@ h1 {
   ;
 }
 
-.hamburger:focus {
+nav button:focus {
   outline: none;
 }
 
@@ -105,29 +110,87 @@ h1 {
   display: inline-block;
 }
 
-.product {
+main {
   display: flex;
-  flex-direction: column;
+  padding-top: 140px;
+  font-family: sans-serif;
+  text-transform: uppercase;
   align-items: center;
 }
 
-.productfoto {
-  width: 10em;
+section:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px 0 30px
 }
 
-main a {
-  align-content: space-between;
+section:first-of-type img {
+  width: 100%;
+}
+
+section:first-of-type article a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-decoration: none;
   color: black;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  margin: 2em;
 }
 
-a h2 {
-  font-size: 15px;
+section:first-of-type article a h2 {
+  font-size: 13px;
+  font-weight: lighter;
+
+}
+section:first-of-type article a strong {
+  font-size: 13px;
+  font-weight: lighter;
+  padding-top: 5px;
+}
+.artikel-beschrijving {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  padding: 1em 0 2em 0;
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 34px;
+  }
 
-@media only screen and (min-width: 1200px) {}
+  section:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  section:first-of-type img {
+    width: 100%;
+  }
+
+  header span ul {
+    font-size: 10px;
+  }
+
+  header a img {
+    width: 7em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  section:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  section:first-of-type img {
+    width: 100%;
+  }
+
+  header a img {
+    width: 8em;
+  }
+}
