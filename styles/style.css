@@ -1,5 +1,7 @@
 /* CSS Document */
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,14 +10,25 @@
 header {
   display: flex;
   position: fixed;
-  background-color: white;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   padding-top: 20px;
   align-items: center;
   justify-content: space-between;
   font-family: sans-serif;
   text-transform: uppercase;
+  transition: ease-in 0.2s;
+  z-index: 2;
+
+}
+
+header:hover {
+  background-color: white;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 nav {
@@ -43,13 +56,28 @@ nav ul li a {
   padding-left: 20px;
 }
 
+input {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid black;
+  background: transparent;
+
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+
 header a {
-  padding-left: 50px;
+  padding-left: 5px;
   align-self: center;
 }
 
 header a img {
-  width: 6em;
+  width: 5em;
+  margin-left: 50px;
 }
 
 .menu--open {
@@ -118,7 +146,7 @@ main {
   align-items: center;
 }
 
-section:first-of-type {
+.product {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
@@ -127,11 +155,11 @@ section:first-of-type {
   padding: 0 30px 0 30px
 }
 
-section:first-of-type img {
+.product img {
   width: 100%;
 }
 
-section:first-of-type article a {
+.product article a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,16 +167,18 @@ section:first-of-type article a {
   color: black;
 }
 
-section:first-of-type article a h2 {
+.product article a h2 {
   font-size: 13px;
   font-weight: lighter;
 
 }
-section:first-of-type article a strong {
+
+.product a strong {
   font-size: 13px;
   font-weight: lighter;
   padding-top: 5px;
 }
+
 .artikel-beschrijving {
   display: flex;
   flex-direction: column;
@@ -157,40 +187,188 @@ section:first-of-type article a strong {
   padding: 1em 0 2em 0;
 }
 
+
+
+
+/* detail pagina css start hier*/
+.carousel {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  position: relative;
+  height: 600px;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.carousel__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel__track-container {
+
+  height: 100%;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.carousel__track {
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 400px;
+  
+}
+
+.carousel__button--left,
+.carousel__button--right {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.carousel__button--left{
+  left: 0%;
+}
+.carousel__button--right {
+  right: 0%;
+}
+
+.carousel__nav {
+  display: flex;
+  height: 90px;
+  max-width: 70%;
+margin-left: auto;
+margin-right: auto;
+padding: 10px 0;
+
+}
+
+.carousel__indicator {}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.left-0{
+  left: 0;
+}
+.left-400{
+  left: 400px;
+}
+.left-800{
+  left: 800px;
+}
+.left-1200{
+  left: 1200px;
+}
+.left-1600{
+  left: 1600px;
+}
+
+.transform-0{
+  transform: translateX(0);
+}
+.transform-400{
+  transform: translateX(-400px);
+}
+.transform-800{
+  transform: translateX(-800px);
+}
+.transform-1200{
+  transform: translateX(-1200px);
+}
+.transform-1600{
+  transform: translateX(-1600px);
+}
+
+.foto-en-info{
+  display: flex;
+  flex-direction: column;
+}
+.info-product{
+  width: 100vw;
+}
 @media only screen and (min-width: 600px) {
   h1 {
     font-size: 34px;
   }
 
-  section:first-of-type {
+  .product {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  section:first-of-type img {
+  .product img {
     width: 100%;
   }
 
-  header span ul {
-    font-size: 10px;
-  }
 
   header a img {
     width: 7em;
   }
+
+  header ul li a {
+    padding-left: 15px;
+  }
+
+}
+@media only screen and (min-width: 800px) {
+  
+  .foto-en-info{
+
+    flex-direction: row;
+  }
+  .info-product{
+    width: 50vw;
+  }
+  .carousel {
+       width: 50vw;
+
+  }
 }
 
+
 @media only screen and (min-width: 1000px) {
-  section:first-of-type {
+  .product {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  section:first-of-type img {
+  .product img {
     width: 100%;
   }
 
   header a img {
     width: 8em;
   }
+
+  header ul li a {
+    padding-left: 25px;
+
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel__nav {
+    display: none;
+  }
+
 }
