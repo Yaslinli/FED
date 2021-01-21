@@ -15,34 +15,39 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Eindgesprek (week 7/8)
 
 -dit ging goed & dit was lastig-
+het werken met media query's ging goed. wat minder goed ging was het maken van een caurousel. na het geprek heb ik dat maar achtergelaten wat ik erg jammer vond.
+
 
 **Screenshot(s):**
 
 -screenshot(s) van je eindresultaat-
+<img src="images/screenshot1.png" width="375px" alt="front page van de zara website">
+<img src="images/screenshot2.png" width="375px" alt="front page van de zara website filter">
+<img src="images/screenshot3.png" width="375px" alt="front page van de zara website filter">
+<img src="images/screenshot5.png" width="375px" alt="front page van de zara website filter">
 
 
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+wat goed ging is het maken van de hamburger button. ook heb ik geoefend met media querys wat makkelijker was dan ik dacht.
 
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
-
-
+Ik heb niet gewerkt aan de website maar geoefend met flexbox.
 
 ## Voortgang 1 (week 3)
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+wat goed ging waas het inzetten van de zontent en het werken aan het structuur.
+wat minder ging was het maken van de toggle in javascript. ik snap nog niet zo goes hoe dat werkt.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+Ik heb helaas geen screenshots genomen.
 
 ### Agenda voor meeting
 
